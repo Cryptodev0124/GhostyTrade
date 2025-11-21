@@ -57,12 +57,12 @@ const Footer: React.FC<React.PropsWithChildren<{ variant?: FooterVariant; helpUr
         </ButtonMenu> */}
         <LinkExternal
           id="ercBridge"
-          href={chainId == 1? "https://cbridge.celer.network/1/56/USDC" : "https://cbridge.celer.network/56/1/USDC"}
+          href={chainId === 1? "https://cbridge.celer.network/1/56/USDC" : "https://cbridge.celer.network/56/1/USDC"}
           ml={[0, 0, '40px']}
           mt={['20px', '20px', isSide ? '20px' : 0]}
           mb={['8px', '8px', 0]}
         >
-          {chainId == 1 ? t('Bridge assets to BSC mainnet') : t('Bridge assets to Ethereum mainet')}
+          {chainId === 1 ? t('Bridge assets to BSC mainnet') : t('Bridge assets to Ethereum mainet')}
         </LinkExternal>
       </Flex>
       {isSide && <Flex flexGrow={1} />}
